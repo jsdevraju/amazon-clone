@@ -1,0 +1,43 @@
+/* Tablet Mode */
+@media (max-width:768px){
+    .name.product_main {
+        width: 90%;
+    }
+    
+    .product_item {
+        padding: 20px;
+    }
+    .price_range {
+        width: 90%;
+    }
+}
+/* Mobile Mode */
+@media (max-width:520px){
+    .nav_bar{
+        justify-content: space-between;
+    }
+    .m_none{
+        display: none ;
+    }
+    .search_box {
+        display: none;
+    }
+    
+    .returns_order {
+        display: none;
+    }
+    
+    .cart_list {
+        display: none;
+    }
+    .mb_active{
+        display: block;
+    }
+    .category .nav_links {
+        font-size: 0.6em;
+    }
+    
+    .category {
+        gap: 0.3em;
+    }
+}

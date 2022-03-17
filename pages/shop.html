@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Url -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://static.rdc.moveaws.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Own Css FIle -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Own Css FIle -->
+    <link rel="stylesheet" href="../css/shop.css" />
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Amazon Clone</title>
+  </head>
+  <body>
+    <!-- Navbar Header Start-->
+    <header class="header">
+      <nav class="nav_bar">
+        <!-- Left Side -->
+        <div class="left">
+          <a href="../index.html" class="d-block logo">
+            <h4>Amazon</h4>
+          </a>
+          <div class="location">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="location_info">
+              <span class="sm_title">Deliver to</span>
+              <h5 class="md_title">Bangladesh</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="search_box">
+          <input type="text" placeholder="Search..." />
+          <div class="iconBox">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <!-- Right Side -->
+        <div class="right">
+          <div class="dropdown m_none">
+            <div
+              class="dropdown-toggle"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="sm_title">Hello,Sign in</span>
+              <h5 class="md_title">Account & Lists</h5>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <div class="top_header text-center">
+                <button class="btn btn-warning text-white">Sign in</button>
+                <p class="mt-2">New customer? <a href="#">Start here.</a></p>
+              </div>
+              <div class="top_links">
+                <a href="#" class="nav_links">Your Account</a>
+                <a href="#" class="nav_links">Account</a>
+                <a href="#" class="nav_links">Orders</a>
+                <a href="#" class="nav_links">Recommendations</a>
+                <a href="#" class="nav_links">Browsing History</a>
+                <a href="#" class="nav_links">Watchlist</a>
+                <a href="#" class="nav_links"> Video Purchases & Rentals</a>
+                <a href="#" class="nav_links">Content & Devices</a>
+                <a href="#" class="nav_links">Subscribe & Save Items</a>
+                <a href="#" class="nav_links">Music Library</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown mb_active">
+            <div
+              class="dropdown-toggle"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="sm_title">Profile</span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <div class="top_header text-center">
+                <button class="btn btn-warning text-white">Sign in</button>
+                <p class="mt-2">New customer? <a href="#">Start here.</a></p>
+              </div>
+              <div class="top_links">
+                <a href="#" class="nav_links">Your Account</a>
+                <a href="#" class="nav_links">Account</a>
+                <a href="#" class="nav_links">Orders</a>
+                <a href="#" class="nav_links">Recommendations</a>
+                <a href="#" class="nav_links">Browsing History</a>
+                <a href="#" class="nav_links">Watchlist</a>
+                <a href="#" class="nav_links"> Video Purchases & Rentals</a>
+                <a href="#" class="nav_links">Content & Devices</a>
+                <a href="#" class="nav_links">Subscribe & Save Items</a>
+                <a href="#" class="nav_links">Music Library</a>
+              </div>
+            </div>
+          </div>
+          <div class="returns_order">
+            <span class="sm_title">Returns</span>
+            <h5 class="md_title">& Orders</h5>
+          </div>
+          <div class="cart_list">
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span class="item">0</span>
+            </div>
+            <h5 class="md_title">Cart</h5>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Header End -->
+
+    <!-- Product Section Start Here -->
+    <section class="product">
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="filter_option">
+              <!-- Price Range -->
+            <div class="price_range">
+               <h4>Availability</h4>
+               <div class="checkBox">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                       In Stock
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Pre Order
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Up Coming
+                     </label>
+                   </div>
+               </div>
+            </div>
+            <!-- Price Range -->
+            <!-- Brand Selection -->
+            <div class="price_range">
+               <h4>Brand</h4>
+               <div class="checkBox">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                       Razer
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      MacBook
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                      Microsoft
+                     </label>
+                   </div>
+               </div>
+            </div>
+            <!-- Brand Selection -->
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-6 col-sm-12">
+          <div class="product_item">
+            <div id="test-list">
+              <input type="text" class="search mb-5" placeholder="Search Now...." />
+              <div class="list">
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p1.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>
+                        LAMAZE Peek-A-Boo Forest, Fun Interactive Baby Book with
+                        Inspiring Rhymes and Stories
+                      </h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p2.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>
+                        Victrola Vintage 3-Speed Bluetooth Portable Suitcase
+                        Record Player with Built-in Speakers
+                      </h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p3.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple Pencil (1st Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p4.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p5.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p6.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p7.jpg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/p8.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n1.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n2.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n3.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n4.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n5.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n1.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n2.jpeg"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+                <!-- Single Product -->
+                <div>
+                  <div class="name product_main">
+                    <div class="product_img">
+                      <img
+                        src="../img/n3.webp"
+                        alt="has"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <h5>Apple AirPods (2nd Generation)</h5>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>$14.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Product -->
+              </div>
+              <ul class="pagination"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section Ends Here -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_content">
+              <h5 class="md_title">Get to Know Us</h5>
+              <ul>
+                <li><a href="#" class="nav_links">Careers</a></li>
+                <li><a href="#" class="nav_links">Blog</a></li>
+                <li><a href="#" class="nav_links">About Amazon</a></li>
+                <li><a href="#" class="nav_links">Investor Relations</a></li>
+                <li><a href="#" class="nav_links">Amazon Devices</a></li>
+                <li><a href="#" class="nav_links">Amazon Science</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_content">
+              <h5 class="md_title">Make Money with Us</h5>
+              <ul>
+                <li>
+                  <a href="#" class="nav_links">Sell products on Amazon</a>
+                </li>
+                <li>
+                  <a href="#" class="nav_links">Sell on Amazon Business</a>
+                </li>
+                <li><a href="#" class="nav_links">Sell apps on Amazon</a></li>
+                <li><a href="#" class="nav_links">Become an Affiliate</a></li>
+                <li>
+                  <a href="#" class="nav_links">Advertise Your Products</a>
+                </li>
+                <li><a href="#" class="nav_links">Self-Publish with Us</a></li>
+                <li><a href="#" class="nav_links">Host an Amazon Hub</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_content">
+              <h5 class="md_title">Make Money with Us</h5>
+              <ul>
+                <li>
+                  <a href="#" class="nav_links">Sell products on Amazon</a>
+                </li>
+                <li>
+                  <a href="#" class="nav_links">Sell on Amazon Business</a>
+                </li>
+                <li><a href="#" class="nav_links">Sell apps on Amazon</a></li>
+                <li><a href="#" class="nav_links">Become an Affiliate</a></li>
+                <li>
+                  <a href="#" class="nav_links">Advertise Your Products</a>
+                </li>
+                <li><a href="#" class="nav_links">Self-Publish with Us</a></li>
+                <li><a href="#" class="nav_links">Host an Amazon Hub</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_content">
+              <h5 class="md_title">Make Money with Us</h5>
+              <ul>
+                <li>
+                  <a href="#" class="nav_links">Sell products on Amazon</a>
+                </li>
+                <li>
+                  <a href="#" class="nav_links">Sell on Amazon Business</a>
+                </li>
+                <li><a href="#" class="nav_links">Sell apps on Amazon</a></li>
+                <li><a href="#" class="nav_links">Become an Affiliate</a></li>
+                <li>
+                  <a href="#" class="nav_links">Advertise Your Products</a>
+                </li>
+                <li><a href="#" class="nav_links">Self-Publish with Us</a></li>
+                <li><a href="#" class="nav_links">Host an Amazon Hub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <!-- Bootstrap Js File  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery Url here -->
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Pagination -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <!-- Main Js File -->
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
